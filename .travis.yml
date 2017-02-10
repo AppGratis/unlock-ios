@@ -1,4 +1,5 @@
 language: objective-c
-xcode_workspace: Unlock.xcworkspace
-xcode_scheme: Unlock
 osx_image: xcode8.2
+script:
+ - xcodebuild -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+ - xcodebuild test -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 7'
