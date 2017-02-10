@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "unlock-ios"
+  s.name         = "AppGratis-unlock"
   s.version      = "0.2"
   s.summary      = "AppGratis Unlock Library - iOS"
   s.description  = <<-DESC
