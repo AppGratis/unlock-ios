@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AGUBuiltinOfferSource : NSObject <AGUOfferSource>
 
-- (instancetype)initWithFilename:(NSString*)filename error:(NSError**)error;
+- (nullable instancetype)initWithFilename:(NSString*)filename error:(NSError**)error;
 
-- (instancetype)initWithFilename:(NSString*)filename inBundle:(NSBundle*)bundle error:(NSError**)error;
+- (nullable instancetype)initWithFilename:(NSString*)filename inBundle:(NSBundle*)bundle error:(NSError**)error;
 
 @end
 
