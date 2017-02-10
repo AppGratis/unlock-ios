@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // Forward declaration of sqlite3 to fix Swift integration of the framework
-struct sqlite3;
+typedef struct sqlite3 sqlite3;
 
 @interface AGUSqliteFeatureTable : NSObject
 
