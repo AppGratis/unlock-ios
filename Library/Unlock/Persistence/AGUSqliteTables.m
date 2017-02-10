@@ -7,6 +7,8 @@
 
 #import "AGUSqliteTables.h"
 
+#import <sqlite3.h>
+
 @implementation AGUSqliteFeatureTable
 
 static NSString *AGUSqliteFeatureTableName = @"FEATURES";

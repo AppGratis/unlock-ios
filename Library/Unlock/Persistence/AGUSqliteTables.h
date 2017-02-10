@@ -6,11 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <sqlite3.h>
 
 #import "AGURedeemedFeature.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+// Forward declaration of sqlite3 to fix Swift integration of the framework
+struct sqlite3;
 
 @interface AGUSqliteFeatureTable : NSObject
 
