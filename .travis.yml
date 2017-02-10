@@ -1,4 +1,4 @@
 language: objective-c
 script:
-  - xcodebuild -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xcodebuild test -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 7'
+ - xcodebuild -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+ - xcodebuild test -workspace Unlock.xcworkspace -scheme Unlock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 7'
