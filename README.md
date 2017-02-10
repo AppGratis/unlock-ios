@@ -1,5 +1,6 @@
 #AppGratis Unlock Library - iOS Framework
 
+[![Build Status](https://travis-ci.org/AppGratis/unlock-ios.svg?branch=master)](https://travis-ci.org/AppGratis/unlock-ios)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 This repo contains the code for the iOS Framework of AppGratis' Unlock Library.  
