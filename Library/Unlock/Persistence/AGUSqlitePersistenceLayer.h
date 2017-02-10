@@ -11,6 +11,6 @@
 
 @interface AGUSqlitePersistenceLayer : NSObject <AGUPersistenceLayer>
 
-- (nullable instancetype)init NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 @end
