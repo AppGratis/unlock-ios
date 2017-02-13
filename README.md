@@ -26,4 +26,3 @@ Simply open `Unlock.xcworkspace` and build the framework. You'll probably need t
 ## Missing features
  - Documentation
    - How to use
-   - Sample app
