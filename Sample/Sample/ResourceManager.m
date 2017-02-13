@@ -26,7 +26,10 @@ NSString *const kSampleResourceManagerUpdatedNotification = @"com.appgratis.unlo
 - (void)saveQuantity:(NSInteger)quantity forResourceNamed:(NSString*)name
 {
     [self saveNumber:@(quantity) forResourceName:name];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSampleResourceManagerUpdatedNotification object:nil];
 }
+
+#pragma mark Storage
 
 - (void)saveNumber:(NSNumber*)number forResourceName:(NSString*)name
 {
