@@ -10,4 +10,9 @@
 @implementation AGUItem {
 
 }
+
+- (void)setName:(NSString *)name {
+    _name = [name uppercaseString];
+}
+
 @end
