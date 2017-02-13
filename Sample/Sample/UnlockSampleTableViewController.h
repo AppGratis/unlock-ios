@@ -24,6 +24,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRow:(NSInteger)row;
 
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller;
+
 - (NSInteger)numberOfRows;
 
 @end
@@ -38,6 +40,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRow:(NSInteger)row;
 
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller;
+
 - (NSInteger)numberOfRows;
 
 @end
@@ -49,6 +53,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRow:(NSInteger)row;
+
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller;
 
 - (NSInteger)numberOfRows;
 

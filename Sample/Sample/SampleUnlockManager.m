@@ -107,6 +107,7 @@ NSString *const kSampleUnlockManagerUpdatedNotification = @"com.appgratis.unlock
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Unlock Sample"
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     UIViewController *targetVC = UIApplication.sharedApplication.keyWindow.rootViewController;
     UIViewController *presentedVC = targetVC.presentedViewController;
     if (presentedVC != nil) {

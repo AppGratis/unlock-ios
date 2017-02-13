@@ -11,6 +11,7 @@
 @import AGUUnlock;
 
 #import "SampleUnlockManager.h"
+#import "OfferDetailsTableViewController.h"
 
 @interface UnlockSampleTableViewController ()
 {
@@ -72,6 +73,14 @@
     [self reloadDatasources];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *identifier = [segue identifier];
+    if ([identifier isEqualToString:@"offerDetails"]) {
+        ((OfferDetailsTableViewController*)[segue destinationViewController]).offer = sender;
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -120,6 +129,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.section) {
+        case 0:
+            [_pendingOffersDatasource tableView:tableView didSelectRow:indexPath.row inViewController:self];
+            break;
+        case 1:
+            [_redeemedFeaturesDatasource tableView:tableView didSelectRow:indexPath.row inViewController:self];
+            break;
+        case 2:
+            [_resourcesDatasource tableView:tableView didSelectRow:indexPath.row inViewController:self];
+            break;
+    }
 }
 
 @end
@@ -149,6 +170,10 @@
     return [_features count];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller {
+    
+}
+
 @end
 
 @implementation AvailableOffersDatasource
@@ -174,6 +199,10 @@
 
 - (NSInteger)numberOfRows {
     return [_offers count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller {
+    [controller performSegueWithIdentifier:@"offerDetails" sender:_offers[row]];
 }
 
 @end
@@ -205,6 +234,10 @@
 
 - (NSInteger)numberOfRows {
     return [_knownResources count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller {
+    
 }
 
 @end
