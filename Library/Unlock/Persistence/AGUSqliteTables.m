@@ -56,9 +56,9 @@ static NSString *AGUSqliteFeatureTableColumn_Redeem_Date = @"redeem_date";
     
     while (sqlite3_step(statement) == SQLITE_ROW) {
         AGUFeature *feature = [AGUFeature new];
-        feature.name = [NSString stringWithUTF8String:(const char*) sqlite3_column_text(statement, 1)];
-        feature.initialLifetime = (NSInteger)sqlite3_column_int64(statement, 2);
-        NSDate *redeemDate = [NSDate dateWithTimeIntervalSince1970:sqlite3_column_double(statement, 3)];
+        feature.name = [NSString stringWithUTF8String:(const char*) sqlite3_column_text(statement, 0)];
+        feature.initialLifetime = (NSInteger)sqlite3_column_int64(statement, 1);
+        NSDate *redeemDate = [NSDate dateWithTimeIntervalSince1970:sqlite3_column_double(statement, 2)];
         [redeemedFeatures addObject:[AGURedeemedFeature redeemedFeatureForFeature:feature redeemDate:redeemDate]];
     }
     
