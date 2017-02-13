@@ -10,6 +10,8 @@
 
 @import AGUUnlock;
 
+#import "SampleUnlockManager.h"
+
 @interface UnlockSampleTableViewController ()
 {
     RedeemedFeaturesDatasource *_redeemedFeaturesDatasource;
@@ -35,6 +37,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(resourceManagerDidUpdate:)
                                                  name:kSampleResourceManagerUpdatedNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(unlockManagerDidUpdate:)
+                                                 name:kSampleUnlockManagerUpdatedNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,9 +54,10 @@
 
 - (void)reloadDatasources
 {
+    SampleUnlockManager *manager = [SampleUnlockManager sharedInstance];
     //TODO: Get the real values
-    _redeemedFeaturesDatasource = [[RedeemedFeaturesDatasource alloc] initWithFeatures:@[]];
-    _pendingOffersDatasource = [[AvailableOffersDatasource alloc] initWithOffers:@[]];
+    _redeemedFeaturesDatasource = [[RedeemedFeaturesDatasource alloc] initWithFeatures:manager.features];
+    _pendingOffersDatasource = [[AvailableOffersDatasource alloc] initWithOffers:manager.pendingOffers];
     [self.tableView reloadData];
 }
 
@@ -60,10 +67,15 @@
     [self.tableView reloadData];
 }
 
+- (void)unlockManagerDidUpdate:(NSNotification*)notification
+{
+    [self reloadDatasources];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -104,6 +116,10 @@
         default:
             return nil;
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

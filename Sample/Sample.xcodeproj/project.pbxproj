@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		510AAEF41E51EFCB00282925 /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 510AAEF31E51EFCB00282925 /* ResourceManager.m */; };
 		510AAEF61E51F16F00282925 /* offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 510AAEF51E51F16F00282925 /* offers.json */; };
+		510AAEF91E52016200282925 /* SampleUnlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 510AAEF81E52016200282925 /* SampleUnlockManager.m */; };
 		512466961DB1445000B14F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 512466951DB1445000B14F1E /* main.m */; };
 		512466991DB1445000B14F1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 512466981DB1445000B14F1E /* AppDelegate.m */; };
 		5124669F1DB1445000B14F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5124669D1DB1445000B14F1E /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 		510AAEF21E51EFCB00282925 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
 		510AAEF31E51EFCB00282925 /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
 		510AAEF51E51F16F00282925 /* offers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = offers.json; sourceTree = "<group>"; };
+		510AAEF71E52016200282925 /* SampleUnlockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleUnlockManager.h; sourceTree = "<group>"; };
+		510AAEF81E52016200282925 /* SampleUnlockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleUnlockManager.m; sourceTree = "<group>"; };
 		512466911DB1445000B14F1E /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512466951DB1445000B14F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		512466971DB1445000B14F1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				5172740A1E4E0CA200769583 /* UnlockSampleTableViewController.m */,
 				510AAEF21E51EFCB00282925 /* ResourceManager.h */,
 				510AAEF31E51EFCB00282925 /* ResourceManager.m */,
+				510AAEF71E52016200282925 /* SampleUnlockManager.h */,
+				510AAEF81E52016200282925 /* SampleUnlockManager.m */,
 				5124669D1DB1445000B14F1E /* Main.storyboard */,
 				512466A01DB1445000B14F1E /* Assets.xcassets */,
 				512466A21DB1445000B14F1E /* LaunchScreen.storyboard */,
@@ -162,6 +167,7 @@
 				512466991DB1445000B14F1E /* AppDelegate.m in Sources */,
 				512466961DB1445000B14F1E /* main.m in Sources */,
 				5172740B1E4E0CA200769583 /* UnlockSampleTableViewController.m in Sources */,
+				510AAEF91E52016200282925 /* SampleUnlockManager.m in Sources */,
 				510AAEF41E51EFCB00282925 /* ResourceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
