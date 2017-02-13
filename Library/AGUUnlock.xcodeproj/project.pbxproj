@@ -12,18 +12,18 @@
 		5112565A1DC3A17100B32ADC /* AGUBaseCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256581DC3A17100B32ADC /* AGUBaseCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5112565B1DC3A17100B32ADC /* AGUBaseCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256591DC3A17100B32ADC /* AGUBaseCondition.m */; };
 		5112565E1DC3A41200B32ADC /* AGUDateProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112565D1DC3A41200B32ADC /* AGUDateProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		511256611DC3A5A800B32ADC /* AGUSystemDateProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112565F1DC3A5A800B32ADC /* AGUSystemDateProvider.h */; };
+		511256611DC3A5A800B32ADC /* AGUSystemDateProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112565F1DC3A5A800B32ADC /* AGUSystemDateProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		511256621DC3A5A800B32ADC /* AGUSystemDateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256601DC3A5A800B32ADC /* AGUSystemDateProvider.m */; };
-		511256651DC3A80600B32ADC /* AGURepeatCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256631DC3A80600B32ADC /* AGURepeatCondition.h */; };
+		511256651DC3A80600B32ADC /* AGURepeatCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256631DC3A80600B32ADC /* AGURepeatCondition.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		511256661DC3A80600B32ADC /* AGURepeatCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256641DC3A80600B32ADC /* AGURepeatCondition.m */; };
-		511256691DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256671DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.h */; };
+		511256691DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256671DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5112566A1DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256681DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.m */; };
 		5112566D1DC3ABCE00B32ADC /* AGUResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112566B1DC3ABCE00B32ADC /* AGUResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5112566E1DC3ABCE00B32ADC /* AGUResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112566C1DC3ABCE00B32ADC /* AGUResource.m */; };
-		511256711DC75FB200B32ADC /* AGUPersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112566F1DC75FB200B32ADC /* AGUPersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		511256761DC7601F00B32ADC /* AGUSqlitePersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256741DC7601F00B32ADC /* AGUSqlitePersistenceLayer.h */; };
+		511256711DC75FB200B32ADC /* AGUPersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5112566F1DC75FB200B32ADC /* AGUPersistenceLayer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		511256761DC7601F00B32ADC /* AGUSqlitePersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256741DC7601F00B32ADC /* AGUSqlitePersistenceLayer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		511256771DC7601F00B32ADC /* AGUSqlitePersistenceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256751DC7601F00B32ADC /* AGUSqlitePersistenceLayer.m */; };
-		5112567A1DC7A54E00B32ADC /* AGURedeemedFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256781DC7A54E00B32ADC /* AGURedeemedFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5112567A1DC7A54E00B32ADC /* AGURedeemedFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 511256781DC7A54E00B32ADC /* AGURedeemedFeature.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5112567B1DC7A54E00B32ADC /* AGURedeemedFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 511256791DC7A54E00B32ADC /* AGURedeemedFeature.m */; };
 		51133EF91E4B843600F9A502 /* BuiltinOfferSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51133EF81E4B843600F9A502 /* BuiltinOfferSourceTests.m */; };
 		5124665D1DB1439A00B14F1E /* AGUUnlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512466531DB1439A00B14F1E /* AGUUnlock.framework */; };
@@ -44,10 +44,11 @@
 		512466CB1DB228C100B14F1E /* AGUOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 512466C81DB228C100B14F1E /* AGUOffer.m */; };
 		512890DC1DDB613D00A7A27D /* MockDateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 512890DB1DDB613D00A7A27D /* MockDateProvider.m */; };
 		512890DF1DDB6EF700A7A27D /* MockPersistenceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 512890DE1DDB6EF700A7A27D /* MockPersistenceLayer.m */; };
-		5177D9901DCA38800022BF1E /* AGUDatasourceParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5177D98E1DCA38800022BF1E /* AGUDatasourceParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5172740C1E51C05800769583 /* AGUFeatureInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5175E3451E4CB86800287863 /* AGUFeatureInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5177D9901DCA38800022BF1E /* AGUDatasourceParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5177D98E1DCA38800022BF1E /* AGUDatasourceParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5177D9911DCA38800022BF1E /* AGUDatasourceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5177D98F1DCA38800022BF1E /* AGUDatasourceParser.m */; };
 		5179C3DC1DCB7BBE00935CEA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5179C3DB1DCB7BBE00935CEA /* libsqlite3.tbd */; };
-		5179C3DF1DCB825E00935CEA /* AGUSqliteTables.h in Headers */ = {isa = PBXBuildFile; fileRef = 5179C3DD1DCB825E00935CEA /* AGUSqliteTables.h */; };
+		5179C3DF1DCB825E00935CEA /* AGUSqliteTables.h in Headers */ = {isa = PBXBuildFile; fileRef = 5179C3DD1DCB825E00935CEA /* AGUSqliteTables.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5179C3E01DCB825E00935CEA /* AGUSqliteTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 5179C3DE1DCB825E00935CEA /* AGUSqliteTables.m */; };
 		519A4F331DDF4C27001C5291 /* ConditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A4F321DDF4C27001C5291 /* ConditionTests.m */; };
 		51CE02F51E4B87440012BBC8 /* offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 51CE02F41E4B87440012BBC8 /* offers.json */; };
@@ -276,10 +277,7 @@
 				512466BE1DB226D900B14F1E /* AGUBuiltinOfferSource.h in Headers */,
 				512466B61DB225FC00B14F1E /* AGUUnlockManager.h in Headers */,
 				5112565E1DC3A41200B32ADC /* AGUDateProvider.h in Headers */,
-				511256711DC75FB200B32ADC /* AGUPersistenceLayer.h in Headers */,
 				5112565A1DC3A17100B32ADC /* AGUBaseCondition.h in Headers */,
-				5112567A1DC7A54E00B32ADC /* AGURedeemedFeature.h in Headers */,
-				5177D9901DCA38800022BF1E /* AGUDatasourceParser.h in Headers */,
 				511256551DC39A7B00B32ADC /* AGUFeature.h in Headers */,
 				5112566D1DC3ABCE00B32ADC /* AGUResource.h in Headers */,
 				512466C31DB2279C00B14F1E /* AGUStringOfferSource.h in Headers */,
@@ -287,10 +285,14 @@
 				512466BB1DB2267400B14F1E /* AGUOfferSource.h in Headers */,
 				AC00026DAE84BBD33F97BF38 /* AGUItem.h in Headers */,
 				512466641DB1439A00B14F1E /* AGUUnlock.h in Headers */,
+				5172740C1E51C05800769583 /* AGUFeatureInternal.h in Headers */,
 				511256761DC7601F00B32ADC /* AGUSqlitePersistenceLayer.h in Headers */,
 				5179C3DF1DCB825E00935CEA /* AGUSqliteTables.h in Headers */,
 				511256691DC3A97B00B32ADC /* AGUWeeklyRepeatCondition.h in Headers */,
 				511256651DC3A80600B32ADC /* AGURepeatCondition.h in Headers */,
+				511256711DC75FB200B32ADC /* AGUPersistenceLayer.h in Headers */,
+				5177D9901DCA38800022BF1E /* AGUDatasourceParser.h in Headers */,
+				5112567A1DC7A54E00B32ADC /* AGURedeemedFeature.h in Headers */,
 				511256611DC3A5A800B32ADC /* AGUSystemDateProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

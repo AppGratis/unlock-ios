@@ -5,15 +5,15 @@
 //  Copyright © 2016 iMediapp. All rights reserved.
 //
 
-#import "AGUUnlockManager.h"
+#import <AGUUnlock/AGUUnlockManager.h>
 
-#import "AGUPersistenceLayer.h"
-#import "AGUDateProvider.h"
-#import "AGUSystemDateProvider.h"
-#import "AGUSqlitePersistenceLayer.h"
-#import "AGUDatasourceParser.h"
+#import <AGUUnlock/AGUPersistenceLayer.h>
+#import <AGUUnlock/AGUDateProvider.h>
+#import <AGUUnlock/AGUSystemDateProvider.h>
+#import <AGUUnlock/AGUSqlitePersistenceLayer.h>
+#import <AGUUnlock/AGUDatasourceParser.h>
 
-#import "AGUFeatureInternal.h"
+#import <AGUUnlock/AGUFeatureInternal.h>
 
 @interface AGUUnlockManager ()
 {

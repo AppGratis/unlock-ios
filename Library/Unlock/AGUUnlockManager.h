@@ -6,10 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AGUOfferSource.h"
+#import <AGUUnlock/AGUOfferSource.h>
 
-#import "AGUFeature.h"
-#import "AGUOffer.h"
+#import <AGUUnlock/AGUFeature.h>
+#import <AGUUnlock/AGUOffer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
