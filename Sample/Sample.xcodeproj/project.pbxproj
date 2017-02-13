@@ -66,6 +66,7 @@
 				512466A01DB1445000B14F1E /* Assets.xcassets */,
 				512466A21DB1445000B14F1E /* LaunchScreen.storyboard */,
 				512466A51DB1445000B14F1E /* Info.plist */,
+				510AAEF51E51F16F00282925 /* offers.json */,
 				512466941DB1445000B14F1E /* Supporting Files */,
 			);
 			path = Sample;
@@ -137,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510AAEF61E51F16F00282925 /* offers.json in Resources */,
 				512466A41DB1445000B14F1E /* LaunchScreen.storyboard in Resources */,
 				512466A11DB1445000B14F1E /* Assets.xcassets in Resources */,
 				5124669F1DB1445000B14F1E /* Main.storyboard in Resources */,
