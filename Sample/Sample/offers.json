@@ -42,10 +42,10 @@
             ],
             "data": null,
             "conditions": {
-                "start_hour": 12,
-                "end_hour": 14,
                 "repeat": {
-                    "every": "DAY"
+                    "every": "DAY",
+                    "start_hour": 12,
+                    "end_hour": 14
                 },
                 "start_date": 1485950456,
                 "end_date": null,
@@ -66,10 +66,11 @@
             "data": null,
             "conditions": {
                 "repeat": {
-                    "every": "WEEK"
+                    "every": "WEEK",
+                    "weekday": "SUNDAY",
+                    "start_hour": 0,
+                    "end_hour": 24
                 },
-                "start_hour": 0,
-                "end_hour": 24,
                 "start_date": 1485957040,
                 "end_date": null,
                 "only_new_users": false
