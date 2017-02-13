@@ -23,7 +23,7 @@ NSInteger const AGUFeatureUnlimitedLifetime = -1;
 
  -(BOOL)isTimeLimited
 {
-    return self.initialLifetime == AGUFeatureUnlimitedLifetime;
+    return self.initialLifetime != AGUFeatureUnlimitedLifetime;
 }
 
 - (BOOL)isExpired
