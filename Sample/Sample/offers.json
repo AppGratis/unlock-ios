@@ -17,7 +17,9 @@
                     "name": "GOLD"
                 }
             ],
-            "data": null,
+            "data": {
+                "nickname": "foo"
+            },
             "conditions": {
                 "start_date": 1485903600,
                 "end_date": null,
