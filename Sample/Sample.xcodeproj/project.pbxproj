@@ -17,6 +17,7 @@
 		512466A41DB1445000B14F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512466A21DB1445000B14F1E /* LaunchScreen.storyboard */; };
 		5172740B1E4E0CA200769583 /* UnlockSampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172740A1E4E0CA200769583 /* UnlockSampleTableViewController.m */; };
 		518181591E5214800010752B /* OfferDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518181581E5214800010752B /* OfferDetailsTableViewController.m */; };
+		51A7CED51E5302FE008AA272 /* FeatureDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7CED41E5302FE008AA272 /* FeatureDetailsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		5172740A1E4E0CA200769583 /* UnlockSampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockSampleTableViewController.m; sourceTree = "<group>"; };
 		518181571E5214800010752B /* OfferDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailsTableViewController.h; sourceTree = "<group>"; };
 		518181581E5214800010752B /* OfferDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailsTableViewController.m; sourceTree = "<group>"; };
+		51A7CED31E5302FE008AA272 /* FeatureDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureDetailsTableViewController.h; sourceTree = "<group>"; };
+		51A7CED41E5302FE008AA272 /* FeatureDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureDetailsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				5172740A1E4E0CA200769583 /* UnlockSampleTableViewController.m */,
 				518181571E5214800010752B /* OfferDetailsTableViewController.h */,
 				518181581E5214800010752B /* OfferDetailsTableViewController.m */,
+				51A7CED31E5302FE008AA272 /* FeatureDetailsTableViewController.h */,
+				51A7CED41E5302FE008AA272 /* FeatureDetailsTableViewController.m */,
 				510AAEF21E51EFCB00282925 /* ResourceManager.h */,
 				510AAEF31E51EFCB00282925 /* ResourceManager.m */,
 				510AAEF71E52016200282925 /* SampleUnlockManager.h */,
@@ -170,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				512466991DB1445000B14F1E /* AppDelegate.m in Sources */,
+				51A7CED51E5302FE008AA272 /* FeatureDetailsTableViewController.m in Sources */,
 				512466961DB1445000B14F1E /* main.m in Sources */,
 				5172740B1E4E0CA200769583 /* UnlockSampleTableViewController.m in Sources */,
 				510AAEF91E52016200282925 /* SampleUnlockManager.m in Sources */,

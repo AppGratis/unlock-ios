@@ -12,6 +12,7 @@
 
 #import "SampleUnlockManager.h"
 #import "OfferDetailsTableViewController.h"
+#import "FeatureDetailsTableViewController.h"
 
 @interface UnlockSampleTableViewController ()
 {
@@ -78,6 +79,8 @@
     NSString *identifier = [segue identifier];
     if ([identifier isEqualToString:@"offerDetails"]) {
         ((OfferDetailsTableViewController*)[segue destinationViewController]).offer = sender;
+    } else if ([identifier isEqualToString:@"featureDetails"]) {
+        ((FeatureDetailsTableViewController*)[segue destinationViewController]).feature = sender;
     }
 }
 
@@ -171,7 +174,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRow:(NSInteger)row inViewController:(UIViewController*)controller {
-    
+    [controller performSegueWithIdentifier:@"featureDetails" sender:_features[row]];
 }
 
 @end
