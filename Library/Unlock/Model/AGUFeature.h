@@ -34,10 +34,4 @@ FOUNDATION_EXPORT NSInteger const AGUFeatureUnlimitedLifetime;
  */
 @property (readonly) BOOL isTimeLimited;
 
-
-/**
- Whether this feature is expired or not. Note that this isn't dynamically updated, and represents the state of the offer when it was queried from the Unlock Manager
- */
-@property (readonly) BOOL isExpired;
-
 @end
