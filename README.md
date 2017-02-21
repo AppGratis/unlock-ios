@@ -23,6 +23,7 @@ Since Swift is still a moving target, this library is fully done in Objective-C.
 ## Building
 Simply open `Unlock.xcworkspace` and build the framework. You'll probably need to set your team to sign it.
 
-## Missing features
- - Documentation
-   - How to use
+## Sample App
+This library comes with a full sample app project. Simply open it in Xcode to see how the library should be used.
+
+![Sample Screenshot](https://github.com/AppGratis/unlock-ios/blob/master/sample.png?raw=true)
