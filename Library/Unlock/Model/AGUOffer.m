@@ -5,7 +5,7 @@
 //  Copyright © 2016 iMediapp. All rights reserved.
 //
 
-#import <AGUUnlock/AGUOffer.h>
+#import "AGUOffer.h"
 
 #import "AGURepeatCondition.h"
 
